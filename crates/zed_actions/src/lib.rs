@@ -704,7 +704,7 @@ actions!(
     zed_predict_onboarding,
     [
         /// Opens the Zed Predict onboarding modal.
-        OpenZedPredictOnboarding
+        OpenNeoPredictOnboarding
     ]
 );
 actions!(

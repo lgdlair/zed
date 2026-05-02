@@ -354,7 +354,7 @@ impl WelcomePage {
                 h_flex()
                     .gap_1p5()
                     .child(
-                        Icon::new(IconName::ZedAssistant)
+                        Icon::new(IconName::NeoAssistant)
                             .color(Color::Muted)
                             .size(IconSize::Small),
                     )
@@ -450,9 +450,9 @@ impl Render for WelcomePage {
         };
 
         let welcome_label = if self.fallback_to_recent_projects {
-            "Welcome back to Zed"
+            "Welcome back to Neo"
         } else {
-            "Welcome to Zed"
+            "Welcome to Neo"
         };
 
         h_flex()

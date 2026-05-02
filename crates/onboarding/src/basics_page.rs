@@ -632,11 +632,11 @@ fn render_zed_agent_button(user_store: &Entity<UserStore>, cx: &mut App) -> impl
 
     AgentSetupButton::new("zed-agent-onboarding")
         .icon(
-            Icon::new(IconName::ZedAgent)
+            Icon::new(IconName::NeoAgent)
                 .size(IconSize::XSmall)
                 .color(Color::Muted),
         )
-        .name("Zed Agent")
+        .name("Neo Agent")
         .state(state_element)
         .disabled(is_trial || is_pro)
         .map(|this| {

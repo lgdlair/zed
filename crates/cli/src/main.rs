@@ -27,7 +27,7 @@ use walkdir::WalkDir;
 
 use std::io::IsTerminal;
 
-const URL_PREFIX: [&'static str; 5] = ["zed://", "http://", "https://", "file://", "ssh://"];
+const URL_PREFIX: [&'static str; 5] = ["neo://", "http://", "https://", "file://", "ssh://"];
 
 struct Detect;
 
@@ -44,7 +44,7 @@ trait InstalledApp {
 
 #[derive(Parser, Debug)]
 #[command(
-    name = "zed",
+    name = "neo",
     disable_version_flag = true,
     before_help = "The Zed CLI binary.
 This CLI is a separate binary that invokes Zed.

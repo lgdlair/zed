@@ -268,7 +268,7 @@ pub enum IconOrSvg {
 
 impl Default for IconOrSvg {
     fn default() -> Self {
-        Self::Icon(IconName::ZedAssistant)
+        Self::Icon(IconName::NeoAssistant)
     }
 }
 
@@ -298,7 +298,7 @@ pub trait LanguageModelProvider: 'static {
 #[derive(Default, Clone, PartialEq, Eq)]
 pub enum ConfigurationViewTargetAgent {
     #[default]
-    ZedAgent,
+    NeoAgent,
     Other(SharedString),
 }
 
